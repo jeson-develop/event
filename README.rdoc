@@ -1,0 +1,35 @@
+API Details:
+
+1. Create Group Event
+	Url: /api/v1/users/1/group_events
+	Method: POST
+	Params: 
+		group_event[name]: Name of event
+		group_event[description]: Description of event
+		group_event[start_at]: Start date of event
+		group_event[duration]: Duration time of event
+		group_event[location]: Location of event
+		group_event[is_published]: True for published and false for saved as draft
+
+2. Update Group Event
+	Url: /api/v1/users/1/group_events/#{group_event_id}
+	Method: PUT
+	Params:
+		group_event[name]: Name of event
+		group_event[description]: Description of event
+		group_event[start_at]: Start date of event
+		group_event[duration]: Duration time of event
+		group_event[location]: Location of event
+		group_event[is_published]: True for published and false for saved as draft
+
+3. Get Group Event
+	Url: /api/v1/users/1/group_events/#{group_event_id}
+	Method: GET
+
+4. Delete Group Event
+	Url: /api/v1/users/1/group_events/#{group_event_id}
+	Method: Delete
+
+5 Get all Group Events
+	Url: /api/v1/users/1/group_events
+	Method: GET	
